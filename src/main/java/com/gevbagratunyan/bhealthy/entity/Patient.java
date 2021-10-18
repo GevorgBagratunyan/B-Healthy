@@ -41,6 +41,9 @@ public class Patient implements Observed {
         }
     }
 
+    private void RedAlert() {
+        notifyObservers();
+    }
 
 
     private boolean isDangerous() {
