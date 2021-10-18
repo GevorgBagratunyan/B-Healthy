@@ -42,6 +42,7 @@ public class Patient implements Observed {
     }
 
     private void RedAlert() {
+        //This is terminal alert
         notifyObservers();
     }
 
