@@ -1,0 +1,13 @@
+package com.gevbagratunyan.bhealthy;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class BHealthyApplicationTests {
+
+    @Test
+    void contextLoads() {
+    }
+
+}
