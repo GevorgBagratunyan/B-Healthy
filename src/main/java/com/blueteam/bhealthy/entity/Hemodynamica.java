@@ -17,6 +17,10 @@ public class Hemodynamica {
     @Column(name = "heart_rate")
     private Integer heartRate;
 
+    @ManyToOne
+    @JoinColumn(name = "patient_id")
+    private Patient patient;
+
     public Hemodynamica() {
     }
 

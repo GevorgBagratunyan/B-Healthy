@@ -26,8 +26,8 @@ public class Patient implements Observed {
     @Column(name = "birth_date")
     private LocalDate birthDate;
 
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, orphanRemoval = true)
-    @JoinTable(name = "patients_hemodynamica")
+    @OneToMany(mappedBy = "patient", cascade = CascadeType.ALL,
+            fetch = FetchType.EAGER, orphanRemoval = true)
     private List<Hemodynamica> hemodynamics = new ArrayList<>();
 
     @ManyToMany(mappedBy = "patients")
